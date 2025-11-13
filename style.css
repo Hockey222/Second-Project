@@ -1,60 +1,73 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-* {
-  padding: 0%;
-  margin: 0%;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafc;
+  text-align: center;
+  padding: 50px;
 }
-
-nav {
-  height: 70px;
+.plans-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 16px;
-  background-color: #cafdff;
-}
-header {
-  background-color: #eadcff;
-  height: calc(100vh - 70px);
-  padding: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-h1 {
-  font-size: 72px;
-}
-.subheader {
-  font-size: 36px;
-
+  justify-content: scenter
+  flex-wrap: wrap;
+ 
 }
 
-button {
-  background-color: #05c7cf ;
+.plan {
+  background-color: white;
+  width: 280px;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.plan:hover {
+  transform: translateY(-4px);
+}
+
+.plan--highlighted {
+  border: 2px solid #4337de;
+}
+
+.plan__title {
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.plan__price {
+  font-size: 28px;
+  color: #4337de;
+  margin-bottom: 15px;
+}
+
+.plan__price span {
+  font-size: 14px;
+  color: #666;
+}
+
+.plan__features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.plan__feature {
+  margin: 8px 0;
+  color: #555;
+}
+
+.plan__button {
+  background-color: #4337de;
   color: white;
   border: none;
-  padding: 8px 16px;
-  font-size: 24px;
-  cursor: pointer; 
-
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-a {
-  color: #000;
-  font-size: 24px;
-  font-weight: 700;
-}
+.plan__button:hover {
+  background-color: #372fc3;
 
-.logo {
-  width: 300px;
-}
-
-ul {
-  display: flex;
-}
-li {
-  list-style: none;
-  padding-left: 16px; 
-  
 }
